@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+
+    <style>
+        @keyframes flying{
+            0%{
+                transform:translateX(0px);
+            }
+            100%{
+                transform:translateX(-708px)
+            }
+        }
+
+        .bird-flying-block{
+            margin-top:50px;
+            margin-left:100px;
+            width:70px;
+            height:100px;
+            overflow:hidden;
+        }
+
+        .bird{
+            animation-name:flying;
+            animation-duration:1s;
+            animation-iteration-count:infinite;
+            animation-fill-mode:both;
+            animation-direction:normal;
+            animation-timing-function:steps(10);
+        }
+    </style>
+</head>
+<body>
+    <div class="bird-flying-block">
+        <img class="bird" height="100px" src="https://raw.githubusercontent.com/nickhsine/teach-at-nccu/master/assets/images/birds-animation-steps.svg">
+    </div>
+</body>
+</html>
